@@ -1,0 +1,112 @@
+/* Universal Styles */
+
+#bodyWrapper {
+    background-color: #9ee9ea;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: large;
+}
+
+/* Title */
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* User Input */
+
+#userInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#userInput label {
+    letter-spacing: 1px;
+}
+
+#userInputTitle {
+    padding: 5px;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    padding-left: 100px;
+}
+
+#userButton {
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+.throwButton:hover {
+    background-color: #4a78aa;
+    color: white;
+}
+
+/* Image throws */
+
+#bothThrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 280px;
+}
+
+/* Score Section */
+
+#score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#userScoreCount {
+    padding-right: 20px;
+}
+
+#computerScoreCount {
+    padding-left: 20px;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Winning Text */
+
+#winning-text {
+    font-size: 30px;
+    width: 200px;
+    text-align: center;
+}
+
+.rockImage {
+    display: none;
+}
+
+/* Reset Button */
+
+#resetButton {
+    width: 80px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+}
+

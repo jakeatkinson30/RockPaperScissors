@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Rock Paper Scissors Game</title>
+	<meta charset="utf-8">
+
+	<!-- Stylesheet -->
+	<link href="../RockPaperScissors/styles.css" rel="stylesheet">
+
+	<!-- Link for style -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet"> 
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="./game.js"></script>
+
+</head>
+
+<body id="bodyWrapper">
+
+<header id="title">
+	<h1>Rock Paper Scissors Game</h1>
+</header>
+
+<main>
+
+	<div id="userInput">
+		<label for="user-choice" id="userInputTitle">Please enter your throw</label>
+		<input type="text"  placeholder="rock paper or scissors" id="user-choice" name="user-choice">
+		<button type="submit" onclick="playGame()" id="userButton">Play round</button>
+	</div>
+
+	<div id="score">
+			<p id="userScoreCount">Your score: <span id="user-score">0</span></p>
+			<p id="computerScoreCount">Computer score: <span id="computer-score">0</span></p>
+	</div>
+
+	<div id="bothThrows">
+		
+		<p id="userThrowImage"></p>
+			<div id="winning-text">		
+				<p></p>
+			</div>
+		<p id="computerThrowImage"></p>
+		
+	</div>
+
+	<div id="reset">
+		<button id="resetButton">Reset</button>
+	</div>
+
+	<script>
+		const resetGameButton = document.getElementById("resetButton");
+		resetGameButton.addEventListener("click", () => {
+			userScore = 0;
+			document.getElementById("user-score").innerHTML = 0;
+			computerScore = 0;
+			document.getElementById("computer-score").innerHTML = 0;
+			document.getElementById('userThrowImage').innerHTML = '';
+			document.getElementById('computerThrowImage').innerHTML = '';
+			document.getElementById("winning-text").innerHTML = '';
+			document.getElementById("user-choice").value = '';
+		});
+	</script>
+
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
